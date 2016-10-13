@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as gridActions from '../actions/grid-actions';
 import GridBoard from './GridBoard';
+import './GridContainer.css'
 
 class GridContainer extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class GridContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className='grid-container'>
         <GridBoard
           dimensions={this.state.dimensions}
           players={this.state.players}

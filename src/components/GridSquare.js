@@ -1,15 +1,11 @@
 import React, { PropTypes } from 'react';
+import './GridSquare.css'
 
 const GridSquare = ({ type }) => {
-  let icon = '0'
-  if(type === 'player') {
-    icon = 'X'
-  } else if (type === 'food') {
-    icon = 'F'
-  }
+  const className = 'grid-square ' + type
   return (
     <div>
-      <span className={type}>{icon}</span>
+      <span className={className} />
     </div>
   );
 };

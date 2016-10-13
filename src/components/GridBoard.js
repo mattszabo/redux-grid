@@ -4,7 +4,7 @@ import './GridBoard.css'
 
 class GridBoard extends React.Component {
   generateRow(row, key) {
-    return <div key={key++}>{row}</div>
+    return <div className='grid-board-row' key={key++}>{row}</div>
   }
   render() {
     const { dimensions, players, food } = this.props
